@@ -8,11 +8,11 @@ foreach ($name in @("py", "python", "python3")) {
     if ($null -eq $cmd) { continue }
     $prefix = @()
     if ($name -eq "py") { $prefix = @("-3") }
-    & $cmd.Source @prefix -c "import sys; sys.exit(sys.version_info < (3, 9))" 2>$null
+    & $cmd.Source @prefix -c "import sys; sys.exit(sys.version_info < (3, 10))" 2>$null
     if ($LASTEXITCODE -eq 0) { $python = @($cmd.Source) + $prefix; break }
 }
 if ($null -eq $python) {
-    Write-Error "agent-kit: Python 3.9+ not found on PATH; nothing was installed."
+    Write-Error "agent-kit: Python 3.10+ not found on PATH; nothing was installed."
     exit 2
 }
 $env:PYTHONPATH = $kitHome

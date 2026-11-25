@@ -6,7 +6,7 @@ A small, dependency-free kit for working with coding agents in any project:
 - **Six workflow skills** - `plan`, `build`, `review`, `verify`, `handoff`, `wrapup`.
 - **Three shared documents** - `BOARD.md`, `PLAN.md`, `LEARNING.md`, read and updated by people and agents alike.
 
-Pure Python standard library (3.9+). Works on Linux, macOS and Windows (Git for Windows).
+Pure Python standard library (3.10+). Works on Linux, macOS and Windows (Git for Windows).
 
 ## The problem
 
