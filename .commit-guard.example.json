@@ -1,0 +1,8 @@
+{
+  "$comment": "Copy to .commit-guard.json. Keys you set replace the defaults; omitted keys keep them.",
+  "allowed_authors": [
+    {"name": "Alice Example", "email": "alice@example.com"},
+    {"email": "build-bot@example.com"}
+  ],
+  "denied_emails": ["*@blocked.example.com"]
+}
